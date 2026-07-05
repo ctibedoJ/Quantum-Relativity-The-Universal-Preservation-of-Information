@@ -1,0 +1,9 @@
+[project]
+name = "universal-qr-transport"
+version = "0.1.0"
+description = "Universal algebraic Q-R / Q^alpha transport kernel"
+requires-python = ">=3.10"
+dependencies = ["numpy"]
+
+[tool.setuptools]
+py-modules = ["qr_transport", "qr_transport_cli"]
