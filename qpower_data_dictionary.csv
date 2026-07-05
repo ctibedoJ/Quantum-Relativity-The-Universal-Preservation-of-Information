@@ -1,0 +1,16 @@
+column,meaning
+dataset,Dataset key used by the portable suite.
+source_id,Identifier linking a raw-data row to qpower_sources.csv.
+row_id,One-based row number inside each dataset.
+index_name,"Name of ordered index: mode, ell, or rank."
+index_value,Ordered spectral/event index value.
+R,Positive spectral radius/amplitude used by Q-power transport.
+qbase,Carrier base q_i used in R_i=s_* q_i^alpha_i.
+lambda_Q,Normalized eigenvalue coordinate of Q=(I^T I)^2 when available.
+rank,Normalized insertion rank r_i.
+pdet,Local pseudo-determinant / determinant-volume channel.
+effective_rank,Effective rank used with pdet channel.
+source_label,Human-readable data source label.
+source_reference,Original file/article/certificate reference; not read by portable suite.
+source_url,Plain-text source URL or included-source marker.
+source_note,Plain-English source note and provenance.
