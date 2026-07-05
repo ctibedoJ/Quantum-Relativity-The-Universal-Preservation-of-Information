@@ -1,0 +1,783 @@
+{
+  "engine": "universal_qr_transport_cli_v1",
+  "input_csv": "/mnt/data/qpower_raw_data.csv",
+  "datasets": [
+    "faithful_current_transport",
+    "gwtc_predictive_events",
+    "planck_lollipop_gramdet",
+    "nanograv_arxiv2606",
+    "strict_final_test",
+    "deterministic_final"
+  ],
+  "results": {
+    "faithful_current_transport": {
+      "engine": "universal_qr_transport_kernel_v1",
+      "rule": {
+        "core": "R_i=s_* q_i^{alpha_i(q)}",
+        "jump": "alpha'_i=alpha_i log(q_i)/log(q'_i)",
+        "universal_cross_domain": 1
+      },
+      "n": 14,
+      "canonical": {
+        "metric": {
+          "relative_l2_error": 2.836348309435919e-17,
+          "max_abs_error": 3.944304526105059e-31,
+          "spectral_match_percent": 100.0
+        },
+        "s_star": 3.848649025999967e-15
+      },
+      "permutation_jump": {
+        "metric": {
+          "relative_l2_error": 2.836348309435919e-17,
+          "max_abs_error": 3.944304526105059e-31,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "deterministic_random_jumps": [
+        {
+          "seed": 42,
+          "metric": {
+            "relative_l2_error": 2.836348309435919e-17,
+            "max_abs_error": 3.944304526105059e-31,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 43,
+          "metric": {
+            "relative_l2_error": 8.509044928307756e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 44,
+          "metric": {
+            "relative_l2_error": 1.8050410110682246e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 45,
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        }
+      ],
+      "qbase_perturbation_jumps": {
+        "sin_eps_1e-08": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_1e-06": {
+          "metric": {
+            "relative_l2_error": 2.0056011234091384e-17,
+            "max_abs_error": 3.944304526105059e-31,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.0001": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.01": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        }
+      },
+      "phase_scrambled_signal": {
+        "metric": {
+          "relative_l2_error": 9.727831609764117e-17,
+          "max_abs_error": 1.5777218104420236e-30,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "injection_covariance": {
+        "amplitude": {
+          "metric": {
+            "relative_l2_error": 1.4350913432616896e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 8.881784197001252e-16
+        },
+        "tilt": {
+          "metric": {
+            "relative_l2_error": 1.680694656056414e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 3.3306690738754696e-15
+        },
+        "curved": {
+          "metric": {
+            "relative_l2_error": 1.145829733413093e-16,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 2.3314683517128287e-15
+        }
+      },
+      "determinant_rank_channel": {
+        "pdet_min": 1.5461918679397375e-07,
+        "pdet_max": 0.1477811490315797,
+        "effective_rank_min": 1.0,
+        "effective_rank_max": 2.0
+      },
+      "certificate_hash": "bec1389176b8b892336f4eb9b12edab192f709df06bb82c1245e16a35e242651"
+    },
+    "gwtc_predictive_events": {
+      "engine": "universal_qr_transport_kernel_v1",
+      "rule": {
+        "core": "R_i=s_* q_i^{alpha_i(q)}",
+        "jump": "alpha'_i=alpha_i log(q_i)/log(q'_i)",
+        "universal_cross_domain": 1
+      },
+      "n": 103,
+      "canonical": {
+        "metric": {
+          "relative_l2_error": 2.2110447416149572e-16,
+          "max_abs_error": 2.842170943040401e-14,
+          "spectral_match_percent": 100.0
+        },
+        "s_star": 4.232489539919227
+      },
+      "permutation_jump": {
+        "metric": {
+          "relative_l2_error": 2.220739444495788e-16,
+          "max_abs_error": 2.842170943040401e-14,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "deterministic_random_jumps": [
+        {
+          "seed": 42,
+          "metric": {
+            "relative_l2_error": 1.2942222436157648e-16,
+            "max_abs_error": 1.4210854715202004e-14,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 43,
+          "metric": {
+            "relative_l2_error": 2.381988354619958e-16,
+            "max_abs_error": 2.842170943040401e-14,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 44,
+          "metric": {
+            "relative_l2_error": 1.31659934966077e-16,
+            "max_abs_error": 1.4210854715202004e-14,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 45,
+          "metric": {
+            "relative_l2_error": 2.07732166537209e-16,
+            "max_abs_error": 2.842170943040401e-14,
+            "spectral_match_percent": 100.0
+          }
+        }
+      ],
+      "qbase_perturbation_jumps": {
+        "sin_eps_1e-08": {
+          "metric": {
+            "relative_l2_error": 1.425880652705627e-16,
+            "max_abs_error": 1.4210854715202004e-14,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_1e-06": {
+          "metric": {
+            "relative_l2_error": 1.4558021381642332e-16,
+            "max_abs_error": 1.4210854715202004e-14,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.0001": {
+          "metric": {
+            "relative_l2_error": 1.202196454495446e-16,
+            "max_abs_error": 1.4210854715202004e-14,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.01": {
+          "metric": {
+            "relative_l2_error": 2.080964802016646e-16,
+            "max_abs_error": 2.842170943040401e-14,
+            "spectral_match_percent": 100.0
+          }
+        }
+      },
+      "phase_scrambled_signal": {
+        "metric": {
+          "relative_l2_error": 1.9561698133984232e-16,
+          "max_abs_error": 2.1316282072803006e-14,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "injection_covariance": {
+        "amplitude": {
+          "metric": {
+            "relative_l2_error": 3.196047748037657e-16,
+            "max_abs_error": 5.684341886080802e-14,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 8.881784197001252e-15
+        },
+        "tilt": {
+          "metric": {
+            "relative_l2_error": 1.910061936100621e-16,
+            "max_abs_error": 2.842170943040401e-14,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 4.440892098500626e-15
+        },
+        "curved": {
+          "metric": {
+            "relative_l2_error": 2.39765610957496e-16,
+            "max_abs_error": 2.842170943040401e-14,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 1.0769163338864018e-14
+        }
+      },
+      "determinant_rank_channel": {
+        "pdet_min": 1.1981243653813091e-08,
+        "pdet_max": 0.11588193004774883,
+        "effective_rank_min": 1.0,
+        "effective_rank_max": 2.0
+      },
+      "certificate_hash": "b3a3f522ca4ce7c6820e1cb60b91dc71afa7c9c1d52cd6ff13ad6ef9feb8dac6"
+    },
+    "planck_lollipop_gramdet": {
+      "engine": "universal_qr_transport_kernel_v1",
+      "rule": {
+        "core": "R_i=s_* q_i^{alpha_i(q)}",
+        "jump": "alpha'_i=alpha_i log(q_i)/log(q'_i)",
+        "universal_cross_domain": 1
+      },
+      "n": 299,
+      "canonical": {
+        "metric": {
+          "relative_l2_error": 1.8826062021839657e-16,
+          "max_abs_error": 7.105427357601002e-15,
+          "spectral_match_percent": 100.0
+        },
+        "s_star": 1.5447531915280153
+      },
+      "permutation_jump": {
+        "metric": {
+          "relative_l2_error": 1.8897207133930802e-16,
+          "max_abs_error": 7.105427357601002e-15,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "deterministic_random_jumps": [
+        {
+          "seed": 42,
+          "metric": {
+            "relative_l2_error": 1.7937699332839538e-16,
+            "max_abs_error": 7.105427357601002e-15,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 43,
+          "metric": {
+            "relative_l2_error": 1.3065821125615665e-16,
+            "max_abs_error": 5.329070518200751e-15,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 44,
+          "metric": {
+            "relative_l2_error": 1.4531225472586462e-16,
+            "max_abs_error": 3.552713678800501e-15,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 45,
+          "metric": {
+            "relative_l2_error": 1.4797775141572898e-16,
+            "max_abs_error": 3.552713678800501e-15,
+            "spectral_match_percent": 100.0
+          }
+        }
+      ],
+      "qbase_perturbation_jumps": {
+        "sin_eps_1e-08": {
+          "metric": {
+            "relative_l2_error": 1.171044813009701e-16,
+            "max_abs_error": 3.552713678800501e-15,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_1e-06": {
+          "metric": {
+            "relative_l2_error": 1.5145370207619597e-16,
+            "max_abs_error": 3.552713678800501e-15,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.0001": {
+          "metric": {
+            "relative_l2_error": 1.8928527327043539e-16,
+            "max_abs_error": 5.329070518200751e-15,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.01": {
+          "metric": {
+            "relative_l2_error": 1.8443144083298213e-16,
+            "max_abs_error": 7.105427357601002e-15,
+            "spectral_match_percent": 100.0
+          }
+        }
+      },
+      "phase_scrambled_signal": {
+        "metric": {
+          "relative_l2_error": 1.2831809484849754e-16,
+          "max_abs_error": 3.552713678800501e-15,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "injection_covariance": {
+        "amplitude": {
+          "metric": {
+            "relative_l2_error": 2.035579949588138e-16,
+            "max_abs_error": 1.0658141036401503e-14,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 2.1316282072803006e-14
+        },
+        "tilt": {
+          "metric": {
+            "relative_l2_error": 1.3455874458663116e-16,
+            "max_abs_error": 3.552713678800501e-15,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 4.973799150320701e-14
+        },
+        "curved": {
+          "metric": {
+            "relative_l2_error": 1.3558064914173426e-16,
+            "max_abs_error": 3.552713678800501e-15,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 5.440092820663267e-14
+        }
+      },
+      "determinant_rank_channel": {
+        "pdet_min": 4.382870782889347e-11,
+        "pdet_max": 4.090610568365564,
+        "effective_rank_min": 1.0,
+        "effective_rank_max": 2.0
+      },
+      "certificate_hash": "fa5ce6125dd4d44d9e571c542d75e3c3de21d2cafc0eaf74235cbc72d46b0a81"
+    },
+    "nanograv_arxiv2606": {
+      "engine": "universal_qr_transport_kernel_v1",
+      "rule": {
+        "core": "R_i=s_* q_i^{alpha_i(q)}",
+        "jump": "alpha'_i=alpha_i log(q_i)/log(q'_i)",
+        "universal_cross_domain": 1
+      },
+      "n": 14,
+      "canonical": {
+        "metric": {
+          "relative_l2_error": 2.836348309435919e-17,
+          "max_abs_error": 3.944304526105059e-31,
+          "spectral_match_percent": 100.0
+        },
+        "s_star": 3.848649025999967e-15
+      },
+      "permutation_jump": {
+        "metric": {
+          "relative_l2_error": 2.836348309435919e-17,
+          "max_abs_error": 3.944304526105059e-31,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "deterministic_random_jumps": [
+        {
+          "seed": 42,
+          "metric": {
+            "relative_l2_error": 2.836348309435919e-17,
+            "max_abs_error": 3.944304526105059e-31,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 43,
+          "metric": {
+            "relative_l2_error": 8.509044928307756e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 44,
+          "metric": {
+            "relative_l2_error": 1.8050410110682246e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 45,
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        }
+      ],
+      "qbase_perturbation_jumps": {
+        "sin_eps_1e-08": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_1e-06": {
+          "metric": {
+            "relative_l2_error": 2.0056011234091384e-17,
+            "max_abs_error": 3.944304526105059e-31,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.0001": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.01": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        }
+      },
+      "phase_scrambled_signal": {
+        "metric": {
+          "relative_l2_error": 9.727831609764117e-17,
+          "max_abs_error": 1.5777218104420236e-30,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "injection_covariance": {
+        "amplitude": {
+          "metric": {
+            "relative_l2_error": 1.4350913432616896e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 8.881784197001252e-16
+        },
+        "tilt": {
+          "metric": {
+            "relative_l2_error": 1.680694656056414e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 3.3306690738754696e-15
+        },
+        "curved": {
+          "metric": {
+            "relative_l2_error": 1.145829733413093e-16,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 2.3314683517128287e-15
+        }
+      },
+      "determinant_rank_channel": {
+        "pdet_min": 1.5461918679397375e-07,
+        "pdet_max": 0.1477811490315797,
+        "effective_rank_min": 1.0,
+        "effective_rank_max": 2.0
+      },
+      "certificate_hash": "bec1389176b8b892336f4eb9b12edab192f709df06bb82c1245e16a35e242651"
+    },
+    "strict_final_test": {
+      "engine": "universal_qr_transport_kernel_v1",
+      "rule": {
+        "core": "R_i=s_* q_i^{alpha_i(q)}",
+        "jump": "alpha'_i=alpha_i log(q_i)/log(q'_i)",
+        "universal_cross_domain": 1
+      },
+      "n": 14,
+      "canonical": {
+        "metric": {
+          "relative_l2_error": 2.836348309435919e-17,
+          "max_abs_error": 3.944304526105059e-31,
+          "spectral_match_percent": 100.0
+        },
+        "s_star": 3.848649025999967e-15
+      },
+      "permutation_jump": {
+        "metric": {
+          "relative_l2_error": 2.836348309435919e-17,
+          "max_abs_error": 3.944304526105059e-31,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "deterministic_random_jumps": [
+        {
+          "seed": 42,
+          "metric": {
+            "relative_l2_error": 2.836348309435919e-17,
+            "max_abs_error": 3.944304526105059e-31,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 43,
+          "metric": {
+            "relative_l2_error": 8.509044928307756e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 44,
+          "metric": {
+            "relative_l2_error": 1.8050410110682246e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 45,
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        }
+      ],
+      "qbase_perturbation_jumps": {
+        "sin_eps_1e-08": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_1e-06": {
+          "metric": {
+            "relative_l2_error": 2.0056011234091384e-17,
+            "max_abs_error": 3.944304526105059e-31,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.0001": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.01": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        }
+      },
+      "phase_scrambled_signal": {
+        "metric": {
+          "relative_l2_error": 9.727831609764117e-17,
+          "max_abs_error": 1.5777218104420236e-30,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "injection_covariance": {
+        "amplitude": {
+          "metric": {
+            "relative_l2_error": 1.4350913432616896e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 8.881784197001252e-16
+        },
+        "tilt": {
+          "metric": {
+            "relative_l2_error": 1.680694656056414e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 3.3306690738754696e-15
+        },
+        "curved": {
+          "metric": {
+            "relative_l2_error": 1.145829733413093e-16,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 2.3314683517128287e-15
+        }
+      },
+      "determinant_rank_channel": {
+        "pdet_min": 1.5461918679397375e-07,
+        "pdet_max": 0.1477811490315797,
+        "effective_rank_min": 1.0,
+        "effective_rank_max": 2.0
+      },
+      "certificate_hash": "bec1389176b8b892336f4eb9b12edab192f709df06bb82c1245e16a35e242651"
+    },
+    "deterministic_final": {
+      "engine": "universal_qr_transport_kernel_v1",
+      "rule": {
+        "core": "R_i=s_* q_i^{alpha_i(q)}",
+        "jump": "alpha'_i=alpha_i log(q_i)/log(q'_i)",
+        "universal_cross_domain": 1
+      },
+      "n": 14,
+      "canonical": {
+        "metric": {
+          "relative_l2_error": 2.836348309435919e-17,
+          "max_abs_error": 3.944304526105059e-31,
+          "spectral_match_percent": 100.0
+        },
+        "s_star": 3.848649025999967e-15
+      },
+      "permutation_jump": {
+        "metric": {
+          "relative_l2_error": 2.836348309435919e-17,
+          "max_abs_error": 3.944304526105059e-31,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "deterministic_random_jumps": [
+        {
+          "seed": 42,
+          "metric": {
+            "relative_l2_error": 2.836348309435919e-17,
+            "max_abs_error": 3.944304526105059e-31,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 43,
+          "metric": {
+            "relative_l2_error": 8.509044928307756e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 44,
+          "metric": {
+            "relative_l2_error": 1.8050410110682246e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        {
+          "seed": 45,
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        }
+      ],
+      "qbase_perturbation_jumps": {
+        "sin_eps_1e-08": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_1e-06": {
+          "metric": {
+            "relative_l2_error": 2.0056011234091384e-17,
+            "max_abs_error": 3.944304526105059e-31,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.0001": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        },
+        "sin_eps_0.01": {
+          "metric": {
+            "relative_l2_error": 8.269305274673318e-17,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          }
+        }
+      },
+      "phase_scrambled_signal": {
+        "metric": {
+          "relative_l2_error": 9.727831609764117e-17,
+          "max_abs_error": 1.5777218104420236e-30,
+          "spectral_match_percent": 100.0
+        }
+      },
+      "injection_covariance": {
+        "amplitude": {
+          "metric": {
+            "relative_l2_error": 1.4350913432616896e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 8.881784197001252e-16
+        },
+        "tilt": {
+          "metric": {
+            "relative_l2_error": 1.680694656056414e-16,
+            "max_abs_error": 3.1554436208840472e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 3.3306690738754696e-15
+        },
+        "curved": {
+          "metric": {
+            "relative_l2_error": 1.145829733413093e-16,
+            "max_abs_error": 1.5777218104420236e-30,
+            "spectral_match_percent": 100.0
+          },
+          "alpha_shift_max_abs_error": 2.3314683517128287e-15
+        }
+      },
+      "determinant_rank_channel": {
+        "pdet_min": 1.5461918679397375e-07,
+        "pdet_max": 0.1477811490315797,
+        "effective_rank_min": 1.0,
+        "effective_rank_max": 2.0
+      },
+      "certificate_hash": "bec1389176b8b892336f4eb9b12edab192f709df06bb82c1245e16a35e242651"
+    }
+  },
+  "certificate_hash": "a7641489d28773f33179097e53ba2ebea2458ac3f4c651dcc8d66a5b45c43c51"
+}

@@ -1,0 +1,45 @@
+{
+  "package": "universal_qr_transport",
+  "purpose": "Cross-domain universal algebraic Q-R / Q^alpha transport kernel",
+  "core_rule": "R_i=s_* q_i^{alpha_i(q)}; alpha_i(q)=log(R_i/s_*)/log(q_i)",
+  "jump_rule": "alpha'_i=alpha_i log(q_i)/log(q'_i)",
+  "cli_certificate_hash": "a7641489d28773f33179097e53ba2ebea2458ac3f4c651dcc8d66a5b45c43c51",
+  "files": {
+    "LICENSE": {
+      "bytes": 68,
+      "sha256": "1bc4459d42d47e38fa44ec676713b833d6d98925419cbea6a4dce97b31a1bfe8"
+    },
+    "README.md": {
+      "bytes": 1469,
+      "sha256": "d9e748b413a0a007e830e2ced27033410052d9c61954bb5ececab9135164ee42"
+    },
+    "cli_run.json": {
+      "bytes": 365,
+      "sha256": "710df41c9140ded2fa618c321a875222917f06a3a68fb50d347a6233f0f94666"
+    },
+    "examples.py": {
+      "bytes": 453,
+      "sha256": "92216f998c8841b466b45c5e3db8d173d6ffd703bba084a241e2c4fc18143480"
+    },
+    "pyproject.toml": {
+      "bytes": 248,
+      "sha256": "566babfc70442b47ad78d9cc0e278838233c8fa8c40f40a696e1ad0a32e34c92"
+    },
+    "qr_transport.py": {
+      "bytes": 14214,
+      "sha256": "8da50cba9495a596d908997d45c748d2fa68ade07f5762ff2b33d7726cbbd106"
+    },
+    "qr_transport_cli.py": {
+      "bytes": 1644,
+      "sha256": "7466007e23750658f34812842d2c2e92503b0e4312fbd947b21274181356e319"
+    },
+    "test_qr_transport.py": {
+      "bytes": 1504,
+      "sha256": "55678872a227942801f4548b500d6d44cea593beab64f16c27fa9c2a34403eac"
+    },
+    "universal_qr_transport_certificate.json": {
+      "bytes": 24562,
+      "sha256": "c6e5eabbf87f2d96ed1a30ae5d13a3a5f1763e2f5d6bd9139c91f2ba6415f5d6"
+    }
+  }
+}
