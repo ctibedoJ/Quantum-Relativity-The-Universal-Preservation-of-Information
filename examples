@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+import numpy as np
+from qr_transport import audit, jump_transport, path_incidence_qbase, perturb_carrier, transport
+
+R = np.array([10.0, 12.0, 8.0, 15.0, 11.0, 20.0, 18.0])
+q, lambda_Q, rank = path_incidence_qbase(len(R))
+state = transport(R, q)
+print("canonical", state.metric())
+q2 = perturb_carrier(q, eps=1e-2)
+jump = jump_transport(state, q2)
+print("jump", jump.metric())
+print("audit hash", audit(R, q)["certificate_hash"])
